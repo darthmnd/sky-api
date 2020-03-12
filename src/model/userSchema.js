@@ -23,11 +23,10 @@ const userSchema = new Schema({
 	        required: true
         },
 
-        telefones:[ {
-            numero: {type: Number, required: true},
-            ddd: {type: Number, required: true}
-        }
-    ],
+        telefone: {
+                type: String, 
+                required: true
+            },
 
         data_criacao: {
             type: Date,
@@ -46,7 +45,7 @@ const userSchema = new Schema({
             type: Date,
             default: Date.now,
             auto: true
-        }
+        },
 })
 
 const userCollection = mongoose.model('user', userSchema)
