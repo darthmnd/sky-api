@@ -40,6 +40,7 @@ const userSchema = new Schema({
             auto: true
 
         },
+        
 
         ultimo_login:{
             type: Date,
