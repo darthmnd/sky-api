@@ -7,7 +7,6 @@ const signUp = (req, res) => {
     const cryptedPswd = bcrypt.hashSync(req.body.senha)
     req.body.senha = cryptedPswd
     const addNewUser = new userCollection(req.body)
-
     addNewUser.save((err) => {
         if(err){
             return res.status(400).json({
