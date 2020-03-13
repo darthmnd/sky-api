@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const DB_URL  = process.env.MONGODB_URI || 'mongodb://localhost:27017/SkyDB'
+const DB_URL  = process.env.MONGODB_URI || 'mongodb://localhost:27017/SkyDB' || 'mongodb://heroku_bnxjq9p2:lcad5emb94s6p2mc78vgiou168@ds163905.mlab.com:63905/heroku_bnxjq9p2'
 const connect = () => {
     mongoose.connect(DB_URL, {
         useNewUrlParser:true,
