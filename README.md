@@ -2,6 +2,8 @@
 
 O objetivo da criação desta API é possibilitar o cadastro, login e pesquisa de um usuário.<br>
 
+A linguagem de desenvolvimento foi Node.js com Express e o banco de dados MongoDB.<br>
+
 É possível utilizar a API pelo Postman: https://www.postman.com/downloads/<br>
 Inserindo o link do Heroku: https://sky-api-avanade.herokuapp.com/ <br>
 
